@@ -2,7 +2,6 @@
   <div>
     <NuxtLayout>
       <NuxtPage />
-
     </NuxtLayout>
     <!-- <Counter /> -->
     <!-- dynamic components -->

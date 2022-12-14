@@ -12,4 +12,8 @@ const route = useRoute()
 const name = computed(() => {
     return route.params.name.replaceAll('-', " ")
 })
+
+useHead({
+    title: `Nuxt 3 - IPhone ${route.params.name.replaceAll('-', " ")}`
+})
 </script>
