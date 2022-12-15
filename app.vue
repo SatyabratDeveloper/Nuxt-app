@@ -1,8 +1,10 @@
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout />
+    <p class="m-6">Cart {{ cart.length }}</p>
+    <p class="m-6">Total page visited: {{ pageVisited }}</p>
       <NuxtPage />
-    </NuxtLayout>
+    <!-- </NuxtLayout> -->
     <!-- <Counter /> -->
     <!-- dynamic components -->
     <!-- <button @click="toggle">toggle</button>
@@ -18,4 +20,8 @@
   //   console.log(MyComponent.value)
   //   MyComponent.value = resolveComponent('Welcome')
   // }
+
+  const cart = useCart();
+  const pageVisited = usePageVisitCount()
+  // console.log(cart.value.length)
 </script>
